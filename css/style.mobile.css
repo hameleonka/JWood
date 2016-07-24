@@ -1,0 +1,351 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 0.75em;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+
+}
+ol, ul {
+    list-style: none;}
+
+
+#home {
+    height: 100vh;
+    background: url("../img/header_background.jpg") no-repeat;
+    background-size: cover;
+}
+
+.navigation {
+    text-align: right;
+    position: relative;
+    margin: 0 3.489583%;
+}
+
+.navigation .menu-icon {
+    display: inline-block;
+    text-align: right;
+    width:8vh;
+    height: 8vh;
+    background:  url(../img/menu-icon.png) center no-repeat;
+}
+
+.menu-wrapper {
+    display: none;
+    position: absolute;
+    right: 1.5vh;
+    top: 0vh;
+    width: 40%;
+    padding-top: 8vh;
+}
+
+.menu-wrapper .mobile{
+    display: block;
+    padding: 3px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.menu-wrapper li {
+    display: block;
+    margin-right: 0;
+    padding: 0.8em 0;
+}
+
+.menu-wrapper li a {
+    font: 1em "Nexa Light", sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navigation:hover .menu-wrapper {
+    display: block;
+}
+
+.menu-wrapper li:hover a{
+    color:grey;
+}
+
+.header-logo-wrapper {
+    height: 92vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo-img {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width:40%;
+    margin-bottom: 2rem;
+}
+
+.header-logo-img img {
+    display: block;
+    max-width: 100%;
+}
+
+.header-logo-img::after {
+    position: absolute;
+    content: "TM";
+    left:90%;
+    top:5%;
+    font: 1.5em "Nexa Bold", sans-serif;
+    color: #ffffff;
+    z-index: 100;
+}
+
+.header-logo-name {
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    font: 1.8em "Nexa Light", sans-serif;
+    width:90%;
+    margin: 0 auto;
+}
+
+.header-logo-name-bold {
+    font: 1em "Nexa Bold", sans-serif;
+    font-weight: 700;
+}
+
+
+#aboutme {
+    height: 100vh;
+    background: #ffffff;
+}
+
+#aboutme .navigation .menu-icon {
+    background:  url(../img/menu-icon_grey.png) center no-repeat;
+}
+
+#aboutme .menu-wrapper .mobile{
+    background: #ffffff;
+    border: 1px solid #afabab;
+}
+
+#aboutme .menu-wrapper li a {
+    color: #afabab;
+}
+
+.aboutme-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding-top: 1em;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.aboutme-content-img {
+    width:90%;
+    margin-right:0;
+    margin-bottom: 1rem;
+}
+
+.aboutme-content-img img {
+    max-width: 100%;
+}
+
+.aboutme-content-text {
+    width: 90%;
+}
+
+.aboutme-content-text h2 {
+    font: 1.9em "Nexa Light", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #202020;
+    margin-bottom: 5%;
+}
+
+.aboutme-content-text p {
+    font: 1em/1.8 "OpenSans Light", sans-serif;
+    color: #202020;
+    margin-bottom: 5%;
+}
+
+.aboutme-content-text p + p {
+    margin-bottom: 0;
+}
+
+.aboutme-content-text .aboutme-content-text-sign {
+    font: italic 1.5em "Felt Tip Woman", sans-serif;
+    color: #202020;
+}
+
+#portfolio{
+    background: url("../img/gallery_background.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+}
+
+#portfolio .menu-wrapper .mobile{
+    background: black;
+}
+
+.portfolio-content {
+    width:82.916667%;
+    margin: 0 auto;
+    margin-bottom: 1.5625em;
+    text-align: center;
+}
+
+.portfolio-content h2 {
+    font: 1.9em "Nexa Light", sans-serif;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+.portfolio-content-gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width:100%;
+}
+
+.portfolio-content-gallery-img {
+display: inline-block;
+width:45%;
+margin-right: 2.7%;
+margin-bottom: 1em;
+}
+
+.portfolio-content-gallery-img img {
+    max-width: 100%;
+}
+
+.portfolio-content-gallery-img:nth-child(5),
+.portfolio-content-gallery-img:nth-child(10) {
+margin-right: 0;
+}
+
+#contacts {
+    height: 100vh;
+    background: #ffffff;
+}
+
+#contacts .navigation .menu-icon {
+    background:  url(../img/menu-icon_grey.png) center no-repeat;
+}
+
+#contacts .menu-wrapper .mobile{
+    border: 1px solid #afabab;
+}
+
+#contacts .menu-wrapper li a {
+    color: #afabab;
+}
+.wrapper-footer {
+    height: 85vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-contacts {
+    height: 44vh;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.footer-contacts-mail,
+.footer-contacts-phone,
+.footer-contacts-social {
+    padding: 0;
+}
+
+.footer-contacts b {
+    font: 1.7em "Nexa Bold", sans-serif;
+    color: #202020;
+    text-transform: uppercase;
+}
+
+.footer-contacts p {
+    font: 2.3em "Nexa Light", sans-serif;
+    padding: 0.5em 0;
+    color: #202020;
+    text-transform: uppercase;
+}
+
+.footer-contacts-phone p {
+    font-size: 3em;
+    padding: 0.3em;
+}
+
+.footer-contacts-social-btns {
+    margin-top: 1.125em;
+}
+
+.social-btn {
+    width: 3.5625rem;
+    height: 3.5625rem;
+    font-size: 0;
+    text-decoration: none;
+    display: inline-block;
+    margin-right:1.5625rem;
+    cursor: pointer;
+}
+
+.social-btn:last-child {
+    margin-right: 0;
+}
+
+.footer-copyright {
+    font: 0.8em "Nexa Light", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    color:#afabab;
+    text-align: center;
+    padding: 1em 0;
+    border-top: 1px solid #afabab;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

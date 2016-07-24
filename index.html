@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JWOODPhotography</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        if (screen.width <= 380) {
+            window.location = "index_mobile.html";
+        }
+    </script>
+
+</head>
+<body>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+    <symbol id="icon-fb" viewBox="0 0 512 512">
+        <path d="M256,0C114.609,0,0,114.609,0,256c0,141.391,114.609,256,256,256c141.391,0,256-114.609,256-256
+		C512,114.609,397.391,0,256,0z M256,472c-119.297,0-216-96.703-216-216S136.703,40,256,40s216,96.703,216,216S375.297,472,256,472z
+		"/>
+        <path d="M316.75,216.812h-44.531v-32.5c0-9.969,10.312-12.281,15.125-12.281c4.781,0,28.767,0,28.767,0v-43.859L283.141,128
+		c-44.983,0-55.25,32.703-55.25,53.672v35.141H195.25V262h32.641c0,58.016,0,122,0,122h44.328c0,0,0-64.641,0-122h37.656
+		L316.75,216.812z"/>
+    </symbol>
+    <symbol id="icon-ins" viewBox="0 0 314.652 314.652">
+        <path d="M157.326,0C70.576,0,0,70.576,0,157.326s70.576,157.326,157.326,157.326s157.326-70.576,157.326-157.326
+		S244.076,0,157.326,0z M157.326,296.652C80.502,296.652,18,234.15,18,157.326S80.502,18,157.326,18s139.326,62.502,139.326,139.326
+		S234.15,296.652,157.326,296.652z"/>
+        <path d="M214.618,80.326H100.034c-10.477,0-19,8.523-19,19v116c0,10.477,8.523,19,19,19h114.584c10.477,0,19-8.523,19-19v-116
+		C233.618,88.85,225.095,80.326,214.618,80.326z M215.618,215.326c0,0.552-0.448,1-1,1H100.034c-0.552,0-1-0.448-1-1v-116
+		c0-0.552,0.448-1,1-1h114.584c0.552,0,1,0.448,1,1V215.326z"/>
+        <rect x="183.583" y="111.812" width="20.615" height="18.911"/>
+        <circle cx="157.326" cy="164.946" r="20.324"/>
+        <path d="M189.745,164.856c0,17.904-14.514,32.418-32.418,32.418s-32.418-14.514-32.418-32.418l0.044-14.445h-14.497v53.761h93.743
+		v-53.761H189.82L189.745,164.856z"/>
+    </symbol>
+    <symbol id="icon-tw" viewBox="0 0 612 612">
+        <path d="M437.219,245.162c0-3.088-0.056-6.148-0.195-9.18c13.214-9.848,24.675-22.171,33.744-36.275
+			c-12.129,5.453-25.148,9.097-38.835,10.626c13.965-8.596,24.675-22.338,29.738-38.834c-13.075,7.928-27.54,13.603-42.924,16.552
+			c-12.323-14.021-29.904-22.95-49.35-23.284c-37.332-0.612-67.598,30.934-67.598,70.463c0,5.619,0.584,11.072,1.752,16.329
+			c-56.22-3.616-106.042-32.881-139.369-77c-5.814,10.571-9.152,22.922-9.152,36.164c0,25.037,11.934,47.291,30.071,60.421
+			c-11.099-0.5-21.503-3.866-30.627-9.375c0,0.306,0,0.612,0,0.918c0,34.996,23.312,64.316,54.245,71.159
+			c-5.675,1.613-11.656,2.448-17.804,2.421c-4.367-0.028-8.596-0.501-12.713-1.392c8.596,28.681,33.577,49.628,63.147,50.323
+			c-23.145,19.194-52.298,30.655-83.955,30.572c-5.453,0-10.849-0.361-16.135-1.029c29.933,20.53,65.456,32.491,103.65,32.491
+			C369.23,447.261,437.219,339.048,437.219,245.162z"/>
+        <path d="M612,306C612,137.004,474.995,0,306,0C137.004,0,0,137.004,0,306c0,168.995,137.004,306,306,306
+			C474.995,612,612,474.995,612,306z M27.818,306C27.818,152.36,152.36,27.818,306,27.818S584.182,152.36,584.182,306
+			S459.64,584.182,306,584.182S27.818,459.64,27.818,306z"/>
+    </symbol>
+
+    <symbol id="double-arrow" viewBox="0 0 220.682 220.682">
+        <polygon points="110.341,220.682 210.043,120.98 181.758,92.695 110.341,164.113 38.924,92.695 10.639,120.98  "
+                 fill="#FFFFFF"/>
+        <polygon points="210.043,28.284 181.758,0 110.341,71.418 38.924,0 10.639,28.284 110.341,127.986  "
+                 fill="#FFFFFF"/>
+    </symbol>
+
+
+    <symbol id="double-arrow_grey" viewBox="0 0 220.682 220.682">
+        <polygon points="110.341,220.682 210.043,120.98 181.758,92.695 110.341,164.113 38.924,92.695 10.639,120.98  "
+                 fill="#afabab"/>
+        <polygon points="210.043,28.284 181.758,0 110.341,71.418 38.924,0 10.639,28.284 110.341,127.986  "
+                 fill="#afabab"/>
+    </symbol>
+
+</svg>
+
+<div class="page-container">
+
+    <header id="home">
+        <nav class="navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutme">About me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-logo-wrapper">
+            <div class="header-logo">
+                <div class="header-logo-img">
+                    <img src="img/header_logo.png" alt="logo">
+                </div>
+                <h1 class="header-logo-name"><span class="header-logo-name-bold">JWood</span>photography</h1>
+            </div>
+
+            <div class="scroll">
+                <p>Scroll down to see more</p>
+                <a class="scroll-btn" href="#aboutme">
+                    <svg style="enable-background:new 0 0 220.682 220.682;" x="0px" y="0px" width="100%" height="100%" xml:space="preserve">
+                        <use xlink:href="#double-arrow"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div id="aboutme">
+        <nav class="navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutme">About me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
+        <article class="aboutme-content clearfix">
+            <div class="aboutme-content-img">
+                <img src="img/jason_wood.jpg" alt="JWood picture">
+            </div>
+            <div class="aboutme-content-text">
+                <h2>About me</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur.</p>
+
+                <p><span class="aboutme-content-text-sign">Jason Wood</span></p>
+            </div>
+        </article>
+        <div class="scroll">
+            <p>Keep scrolling there is still more to come</p>
+            <a class="sprite sprite-double_arrow_grey" href="#portfolio"></a>
+            <a class="scroll-btn" href="#portfolio">
+                <svg style="enable-background:new 0 0 220.682 220.682;" x="0px" y="0px" width="100%" height="100%" xml:space="preserve">
+                    <use xlink:href="#double-arrow_grey"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <nav class="navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutme">About me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="portfolio-content">
+            <h2>Portfolio</h2>
+
+            <div class="portfolio-content-gallery">
+
+                <div class="portfolio-content-gallery-img">
+                    <img src="img/gallery_img_1.jpg" alt="Picture">
+                </div>
+                <div class="portfolio-content-gallery-img">
+                    <img src="img/gallery_img_2.jpg" alt="Picture">
+                </div>
+                <div class="portfolio-content-gallery-img">
+                    <img src="img/gallery_img_3.jpg" alt="Picture">
+                </div>
+                <div class="portfolio-content-gallery-img">
+                    <img src="img/gallery_img_4.jpg" alt="Picture">
+                </div>
+                <div class="portfolio-content-gallery-img">
+                    <img src="img/gallery_img_5.jpg" alt="Picture">
+                </div>
+
+
+                <div class="portfolio-content-gallery-img">
+                    <img src="img/gallery_img_6.jpg" alt="Picture">
+                </div>
+                <div class="portfolio-content-gallery-img">
+                    <img src="img/gallery_img_7.jpg" alt="Picture">
+                </div>
+                <div class="portfolio-content-gallery-img">
+                    <img src="img/gallery_img_8.jpg" alt="Picture">
+                </div>
+                <div class="portfolio-content-gallery-img">
+                    <img src="img/gallery_img_9.jpg" alt="Picture">
+                </div>
+                <div class="portfolio-content-gallery-img">
+                    <img src="img/gallery_img_10.jpg" alt="Picture">
+                </div>
+
+            </div>
+
+        </section>
+        <div class="scroll">
+            <p>Do you want to see it with your own eyes? Scroll!</p>
+            <a class="scroll-btn" href="#contacts">
+                <svg style="enable-background:new 0 0 220.682 220.682;" x="0px" y="0px" width="100%" height="100%" xml:space="preserve">
+                    <use xlink:href="#double-arrow"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <footer id="contacts">
+        <nav class="navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutme">About me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="footer-contacts">
+            <div class="footer-contacts-mail">
+                <b>Mail</b>
+
+                <p>jason@wood.com</p>
+            </div>
+            <div class="footer-contacts-phone">
+                <b>Phone</b>
+
+                <p>+44 212 432 444</p>
+            </div>
+            <div class="footer-contacts-social">
+                <b>Social media</b>
+
+                <div class="footer-contacts-social-btns">
+                    <a class="social-btn" href="#">Facebook
+                        <svg style="enable-background:new 0 0 512 512;" x="0px" y="0px" width="100%" height="100%" xml:space="preserve">
+                            <use xlink:href="#icon-fb" />
+                        </svg>
+                    </a>
+                    <a class="social-btn">Twitter
+                        <svg style="enable-background:new 0 0 612 612;" x="0px" y="0px" width="100%" height="100%" xml:space="preserve" >
+                            <use xlink:href="#icon-tw"></use>
+                        </svg>
+                    </a>
+                    <a class="social-btn">Instagram
+                        <svg style="enable-background:new 0 0 314.652 314.652;" x="0px" y="0px" width="100%" height="100%" xml:space="preserve">
+                            <use xlink:href="#icon-ins"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="footer-copyright">
+            <p> Designed by Pawel Szymankiewicz</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
